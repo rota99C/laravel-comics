@@ -1,1 +1,74 @@
 @use 'bootstrap';
+
+/* regola generale */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+$brand-color: #0282F9;
+
+/* font-header */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* header */
+.header-top{
+    background-color: $brand-color;
+    p{
+        margin-bottom: 0;
+        padding: 5px 0px;
+        font-size: 0.8em;
+    }
+}
+.header-bottom{
+    font-family: 'Acme', sans-serif;
+    height: 90px;
+    .logo-header{
+        height:80%;
+        img{
+            height: 100%;
+    } 
+        
+    }
+    ul{
+        margin: 0px;
+        height: 100%;
+        li {
+        display: inline;
+        margin: 0px 20px;
+        list-style: none;
+        line-height: 90px;
+        
+        a{
+            text-decoration: none;
+            &:visited{
+                color: black;
+            }
+            &:hover {
+                color: $brand-color;
+                border-bottom: 1px solid $brand-color;
+            }
+        }
+    }
+    } 
+    .searchbar{
+        border-bottom: 1px solid $brand-color ;
+        input {
+            border: none;
+            text-align: right;
+        }
+    }
+}
+
+
+#slideshow{
+    background-image: url(../img/jumbotron.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: top;
+
+}
+
+
+
