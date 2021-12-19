@@ -11308,6 +11308,43 @@ textarea.form-control-lg {
   background-position: top;
 }
 
+main {
+  padding-top: 40px;
+  background-color: #1C1C1C;
+}
+main .current-serie {
+  width: 190px;
+  height: 40px;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 370px;
+  top: 550px;
+  background-color: #0282f9;
+  background-repeat: no-repeat;
+}
+main .singolo {
+  width: 230px;
+  height: 290px;
+  margin: 17px;
+}
+main .singolo img {
+  width: 230px;
+  height: 232px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .singolo h5 {
+  margin-top: 15px;
+  color: white;
+  font-weight: lighter;
+}
+
 /* footer */
 .footer-top {
   height: 360px;
