@@ -7,7 +7,9 @@
     </div>
     <div class="header-bottom w-100 bg-white">
         <div class="w-75 m-auto d-flex justify-content-between align-items-center h-100">
-            <div class="logo-header"><img src="{{asset('img/dc-logo.png')}}" alt=""></div>
+            <div class="logo-header"><a href="{{route('homepage')}}">
+                <img src="{{asset('img/dc-logo.png')}}" alt="">
+            </a></div>
             <div class="h-100">
                 <ul>
                 <li><a href="">CHARACTERS</a></li>

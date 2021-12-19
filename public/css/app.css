@@ -11283,13 +11283,14 @@ textarea.form-control-lg {
 }
 .header-bottom ul li a {
   text-decoration: none;
+  padding-bottom: 30px;
 }
 .header-bottom ul li a:visited {
   color: black;
 }
 .header-bottom ul li a:hover {
   color: #0282F9;
-  border-bottom: 1px solid #0282F9;
+  border-bottom: 5px solid #0282F9;
 }
 .header-bottom .searchbar {
   border-bottom: 1px solid #0282F9;
@@ -11299,9 +11300,71 @@ textarea.form-control-lg {
   text-align: right;
 }
 
+/* slideshow */
 #slideshow {
   background-image: url(../img/jumbotron.jpg);
   height: 450px;
   background-size: cover;
   background-position: top;
+}
+
+/* footer */
+.footer-top {
+  height: 360px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+}
+.footer-top .footer-list {
+  padding: 30px 0px;
+}
+.footer-top .footer-list h3 {
+  color: white;
+}
+.footer-top .footer-list ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-top .footer-list ul li {
+  list-style-type: none;
+  font-size: 0.8em;
+}
+.footer-top .footer-list ul li a {
+  text-decoration: none;
+  color: #82827f;
+}
+.footer-top .footer-list ul li a:visited {
+  color: #82827f;
+}
+.footer-top .footer-logo img {
+  position: absolute;
+  top: -80px;
+  right: 0px;
+}
+
+.footer-bottom {
+  height: calc(100vh - 929.18px);
+  background-color: #303030;
+}
+.footer-bottom .sign-up {
+  padding: 10px;
+  border: 3px solid #0282F9;
+}
+.footer-bottom .sign-up a {
+  text-decoration: none;
+  color: white;
+}
+.footer-bottom .sign-up a:visited {
+  color: white;
+}
+.footer-bottom .social h3 {
+  color: #0282F9;
+  font-size: 20px;
+  margin-bottom: 0 !important;
+  align-self: center;
+}
+.footer-bottom .social img {
+  margin: 0px 10px;
+  width: 35px;
+  height: 35px;
 }
