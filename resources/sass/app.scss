@@ -74,6 +74,13 @@ $brand-color: #0282F9;
 
 
 main{
+
+.index-container{
+    padding-top: 40px;
+    background-color: #1C1C1C;
+
+}
+
     .current-serie {
         width: 190px;
         height: 40px;
@@ -87,8 +94,7 @@ main{
         top: 550px;
         background-color: #0282f9;
         background-repeat: no-repeat;
-    }padding-top: 40px;
-    background-color: #1C1C1C;
+    }
     .singolo{
          width: 230px;
         height: 290px;
@@ -180,5 +186,35 @@ main{
         }
     }
 }
+
+/* show  */
+.show-top{
+    height: 60px;
+    background-color: $brand-color;
+}
+
+.show-middle{
+    padding: 80px 0px;
+    h3{
+    text-transform: uppercase;
+    color: #003F5E;
+    }
+    .tabella{
+        background-color: #55BA59;
+        
+        border-bottom: 1px solid #357739;
+        .prezzo{
+            border-right: 1px solid #357739;
+            padding: 10px 20px;
+        }
+        p{
+            color: #BAFD93;
+            margin: 0!important;
+        }
+    }
+}
+
+
+
 
 

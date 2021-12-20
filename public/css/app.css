@@ -11308,7 +11308,7 @@ textarea.form-control-lg {
   background-position: top;
 }
 
-main {
+main .index-container {
   padding-top: 40px;
   background-color: #1C1C1C;
 }
@@ -11404,4 +11404,30 @@ main .singolo h5 {
   margin: 0px 10px;
   width: 35px;
   height: 35px;
+}
+
+/* show  */
+.show-top {
+  height: 60px;
+  background-color: #0282F9;
+}
+
+.show-middle {
+  padding: 80px 0px;
+}
+.show-middle h3 {
+  text-transform: uppercase;
+  color: #003F5E;
+}
+.show-middle .tabella {
+  background-color: #55BA59;
+  border-bottom: 1px solid #357739;
+}
+.show-middle .tabella .prezzo {
+  border-right: 1px solid #357739;
+  padding: 10px 20px;
+}
+.show-middle .tabella p {
+  color: #BAFD93;
+  margin: 0 !important;
 }
