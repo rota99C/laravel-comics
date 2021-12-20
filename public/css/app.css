@@ -11326,31 +11326,92 @@ main .current-serie {
   background-color: #0282f9;
   background-repeat: no-repeat;
 }
-main .singolo {
-  width: 230px;
-  height: 290px;
+main .current-serie p {
+  margin: 0 !important;
+}
+main a {
+  text-decoration: none;
+}
+main a .singolo {
   margin: 17px;
 }
-main .singolo img {
+main a .singolo img {
   width: 230px;
-  height: 232px;
+  height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
 }
-main .singolo h5 {
+main a .singolo h5 {
   margin-top: 15px;
   color: white;
   font-weight: lighter;
 }
+main .load-more {
+  color: white;
+  background-color: #0282f9;
+  width: 150px;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 5px 0px;
+}
+main .load-more a {
+  text-decoration: none;
+}
+main .load-more a:visited {
+  color: white;
+}
+main .content-cards {
+  height: 120px;
+  background-color: #0282f9;
+}
+main .content-cards div {
+  line-height: 120px;
+}
+main .content-cards ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 !important;
+}
+main .content-cards ul li {
+  list-style-type: none;
+}
+main .content-cards ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+main .content-cards ul li a a:visited {
+  color: white;
+}
+main .content-cards ul li a img {
+  width: 40px;
+  height: 45px;
+  margin-right: 10px;
+}
+main .content-cards ul li a img.shop-locator {
+  height: 40px;
+  width: 35px;
+}
+main .content-cards ul li a p {
+  margin: 0 !important;
+}
 
 /* footer */
+footer {
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+}
+
 .footer-top {
   height: 360px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url(../img/footer-bg.jpg);
-  background-size: cover;
 }
 .footer-top .footer-list {
   padding: 30px 0px;
@@ -11411,6 +11472,11 @@ main .singolo h5 {
   height: 60px;
   background-color: #0282F9;
 }
+.show-top .container-img {
+  bottom: 15px;
+  left: 475px;
+  border: 1px solid white;
+}
 
 .show-middle {
   padding: 80px 0px;
@@ -11418,9 +11484,11 @@ main .singolo h5 {
 .show-middle h3 {
   text-transform: uppercase;
   color: #003F5E;
+  padding-bottom: 10px;
 }
 .show-middle .tabella {
   background-color: #55BA59;
+  margin-bottom: 10px;
   border-bottom: 1px solid #357739;
 }
 .show-middle .tabella .prezzo {
@@ -11430,4 +11498,16 @@ main .singolo h5 {
 .show-middle .tabella p {
   color: #BAFD93;
   margin: 0 !important;
+}
+.show-middle .description {
+  color: #555555;
+  font-weight: 600;
+}
+.show-middle .advertisement {
+  color: #555555;
+}
+
+.show-bottom {
+  background-color: #F6F6F6;
+  border: 1px lightgrey solid;
 }

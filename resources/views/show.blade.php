@@ -3,10 +3,15 @@
 @section('page-title', 'Comic')
 
 @section('content')
-<div class="show-top w-100"></div>
-<div class=" show-middle w-100 bg-white">
-    <div class="w-50 m-auto bg-black d-flex">
-        <div class="col-8 bg-primary">
+<div class="show-top w-100 position-relative">
+    <div class="container-img position-absolute">
+      <img src="{{$comic['thumb']}}" alt="thumb">  
+    </div>
+    
+</div>
+<div class="show-middle w-100 bg-white">
+    <div class="w-50 m-auto d-flex">
+        <div class="col-8">
             <h3>{{ $comic['title'] }}</h3>
             <div class="tabella d-flex w-100 align-items-center">
                 <div class="prezzo col-9 d-flex justify-content-between pe-3" >
@@ -17,29 +22,91 @@
                     <p class="text-white ps-3">Check Availability</p>
                 </div>
             </div>
-            <div>
+            <div class="description">
                 <p>{{$comic['description']}}</p>
             </div>
 
         </div>
-        <div class="col-4 bg-white">
-            <p>ADVERTISEMENT</p>
-            <img src="{{asset('img/adv.jpg')}}" alt="">
+        <div class="col-4">
+            <p class="advertisement text-end"><strong>ADVERTISEMENT</strong></p>
+            <img class="w-100 h-100" src="{{asset('img/adv.jpg')}}" alt="Adv">
 
         </div>
 
     </div>
 </div>
-<div class="show-bottom">
-    <div>
-        <h1>Talent</h1>
+<div class="show-bottom w-100">
+    <div class="w-50 m-auto d-flex" >
+        <div class="col-6">
+          <h4>Talent</h4> 
+          <hr>
+          <div class="d-flex">
+              <div class="col-3">
+              <p>Art by:</p>
+              </div>
+              <div class="col-9">
+                @foreach($comic['artists'] as $artist)
+                    @if($loop->last)
+                        <span>{{$artist}}</span>
+                     @else
+                        <span>{{$artist}}</span>,
+                    @endif
+                @endforeach
+              </div>
+          </div> 
+          <hr>
+          <div class="d-flex">
+              <div class="col-3">
+              <p>Written by:</p>
+              </div>
+              <div class="col-9">
+                @foreach($comic['writers'] as $writer)
+                    @if($loop->last)
+                        <span>{{$writer}}</span>
+                     @else
+                        <span>{{$writer}}</span>,
+                    @endif
+                @endforeach
+              </div>
+          </div> 
+        </div>
+        <div class="col-6">
+        <h4>Specs</h4>
         <hr>
-        <p>art by:</p><p>{{$comic['artists']}}</p>
-        <p>written by:</p><p> {{$comic['writers']}} </p>
+        <div class="d-flex">
+              <div class="col-3">
+              <p>Series:</p>
+              </div>
+              <div class="col-9">
+                <p>{{$comic['series']}}</p>
+              </div>
+        </div> 
+        <hr>
+        <div class="d-flex">
+              <div class="col-3">
+              <p>U.S. Price:</p>
+              </div>
+              <div class="col-9">
+                <p>{{$comic['price']}}</p>
+              </div>
+        </div> 
+        <hr>
+        <div class="d-flex">
+              <div class="col-3">
+              <p>On Sale Date:</p>
+              </div>
+              <div class="col-9">
+                <p>{{$comic['sale_date']}}</p>
+              </div>
+        </div> 
+        <hr>
 
-    </div>
-    <div>
-        <h1>Specs</h1>
+
+
+
+
+        </div>
+
     </div>
 </div>
 
